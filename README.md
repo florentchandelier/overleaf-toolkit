@@ -1,5 +1,10 @@
 # Overleaf Toolkit
 
+This repository contains the **Overleaf Toolkit for Overleaf-ce**, the standard tools for running a local
+instance of [Overleaf-ce - with community-enabled modules](https://github.com/florentchandelier/overleaf). This toolkit will help you to set up and administer both Overleaf Community Edition (free to use, and community supported). 
+
+The original [Overleaf Toolkit](https://github.com/overleaf/toolkit) should be use for Overleaf Server Pro (commercial, with professional support).
+
 This repository contains the Overleaf Toolkit, the standard tools for running a local
 instance of [Overleaf](https://overleaf.com). This toolkit will help you to set up and administer both Overleaf Community Edition (free to use, and community supported), and Overleaf Server Pro (commercial, with professional support).
 
