@@ -3,15 +3,15 @@
 PROJECT_NAME=overleaf
 
 # Sharelatex container
-# Uncomment the OVERLEAF_IMAGE_NAME variable to use a user-defined image.
-# OVERLEAF_IMAGE_NAME=sharelatex/sharelatex
+# Uncomment the OVERLEAF_IMAGE_NAME variable to use a user-defined image. e.g. overleaf-ce-fulltexlive
+OVERLEAF_IMAGE_NAME=overleaf/overleaf-ce
 OVERLEAF_DATA_PATH=data/overleaf
 SERVER_PRO=false
-OVERLEAF_LISTEN_IP=127.0.0.1
+OVERLEAF_LISTEN_IP=0.0.0.0
 OVERLEAF_PORT=80
 
 # Sibling Containers
-SIBLING_CONTAINERS_ENABLED=true
+SIBLING_CONTAINERS_ENABLED=false
 DOCKER_SOCKET_PATH=/var/run/docker.sock
 
 # Mongo configuration

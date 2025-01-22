@@ -6,25 +6,39 @@ instance of [Overleaf](https://overleaf.com). This toolkit will help you to set 
 The [Developer wiki](https://github.com/overleaf/overleaf/wiki) contains further documentation on releases, features and other configuration elements.
 
 
-## Getting Started
+# Getting Started: Deployment Notes
 
-Clone this repository locally:
+## Build the necessary images first
 
-``` sh
-git clone https://github.com/overleaf/toolkit.git ./overleaf-toolkit
+Build the community image Overleaf-ce (lean version).
+
+```
+git clone git@github.com:florentchandelier/overleaf.git
+cd /overleaf/server-ce
+git checkout overleaf-ce
+make lean
 ```
 
-Then follow the [Quick Start Guide](./doc/quick-start-guide.md).
+## Build and Deploy the services
 
+```
+git clone git@gitlab.com:invariantinc/it/overleaf-toolkit.git
+cd overleaf-toolkit
+bin/init
+```
+
+Edit `config/overleaf.rc` as necessary.
+
+... and deploy
+
+```
+bin/up
+```
 
 ## Documentation
 
+See [Quick Start Guide](./doc/quick-start-guide.md).
 See [Documentation Index](./doc/README.md)
-
-
-## Contributing
-
-See the [CONTRIBUTING](https://github.com/overleaf/overleaf/blob/main/CONTRIBUTING.md) file.
 
 
 ## Getting Help

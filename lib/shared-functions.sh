@@ -26,6 +26,7 @@ function read_image_version() {
 
 function read_mongo_version() {
   local mongo_image=$(read_configuration "MONGO_IMAGE")
+  # if any issue arises, cherry-pick https://github.com/overleaf/toolkit/pull/293/files
   local mongo_version=$(read_configuration "MONGO_VERSION")
   if [ -z "${mongo_version}" ]; then
     if [[ "$mongo_image" =~ ^mongo:([0-9]+)\.(.*)$ ]]; then
