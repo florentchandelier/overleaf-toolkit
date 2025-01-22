@@ -40,6 +40,18 @@ Edit `config/overleaf.rc` as necessary.
 bin/up
 ```
 
+### Tracking Original Repo (dev notes)
+
+```
+git remote add overleaf-original git@github.com:overleaf/toolkit.git
+git fetch overleaf-original
+git checkout main
+git branch --set-upstream-to=overleaf-original/master master
+git pull
+```
+
+... then align modifications with this repo's branch overleaf-ce.
+
 ## Documentation
 
 See [Quick Start Guide](./doc/quick-start-guide.md).
